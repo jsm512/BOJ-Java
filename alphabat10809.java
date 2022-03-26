@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class alphabat10809 {
     public static void main(String[] args)throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int[] arr = new int[26];
         for(int i = 0; i < arr.length; i++){
@@ -13,7 +13,7 @@ public class alphabat10809 {
         String s = br.readLine();
 //내가 푼 풀이
         for(int i = 0; i < 26; i++){
-            for(int j = 0 j < s.length(); j++){
+            for(int j = 0;j < s.length(); j++){
                 if((char)(97+i) == s.charAt(j)){
                     arr[i] = j;
                     break;
