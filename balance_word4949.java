@@ -7,9 +7,9 @@ public class balance_word4949 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s;
-        while(true){
-            s= br.readLine();
-            if(s.equals(".")){
+        while (true) {
+            s = br.readLine();
+            if (s.equals(".")) {
                 break;
             }
             System.out.println(result(s));
@@ -24,24 +24,22 @@ public class balance_word4949 {
             if (ch == '(' || ch == '[') {
                 arr.push(ch);
             } else if (ch == ')') {
-                if (arr.isEmpty() || arr.peek()!='(') {
+                if (arr.isEmpty() || arr.peek() != '(') {
                     return "no";
                 } else {
                     arr.pop();
                 }
             } else if (ch == ']') {
-                if (arr.isEmpty() || arr.peek()!='[') {
+                if (arr.isEmpty() || arr.peek() != '[') {
                     return "no";
-                }
-                else{
+                } else {
                     arr.pop();
                 }
             }
         }
-        if(arr.isEmpty()){
+        if (arr.isEmpty()) {
             return "yes";
-        }
-        else{
+        } else {
             return "no";
         }
     }
