@@ -9,9 +9,9 @@ public class Film_director1436 {
         int number = 666;
         int cnt = 1;
 
-        while(cnt != n){
+        while (cnt != n) {
             number++;
-            if(String.valueOf(number).contains("666")){
+            if (String.valueOf(number).contains("666")) {
                 cnt++;
             }
         }
